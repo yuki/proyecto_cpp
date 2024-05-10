@@ -1,0 +1,152 @@
+object FVerGrupos: TFVerGrupos
+  Left = 167
+  Top = 78
+  Width = 542
+  Height = 428
+  HorzScrollBar.Range = 468
+  VertScrollBar.Range = 345
+  ActiveControl = ListGrupos
+  Caption = 'Ver Grupos'
+  Color = clSilver
+  Menu = MenuPrincipal
+  OnClose = FormClose
+  OnHide = FormHide
+  OnShow = FormShow
+  PixelsPerInch = 100
+  TextHeight = 15
+  TextWidth = 7
+  object LVerGrupos: TLabel
+    Left = 175
+    Top = 27
+    Width = 170
+    Height = 48
+    Caption = 'Ver Grupos'
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 37
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = [fsItalic]
+    ParentFont = False
+  end
+  object LGrupos: TLabel
+    Left = 104
+    Top = 124
+    Width = 51
+    Height = 20
+    Caption = 'Grupos'
+    Font.Color = clBlack
+    Font.Height = 17
+    Font.Name = 'times'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ListGrupos: TListBox
+    Left = 57
+    Top = 157
+    Width = 161
+    Height = 89
+    Hint = 'Lista de Grupos'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+    OnClick = ListGruposClick
+  end
+  object LFechas: TLabel
+    Left = 378
+    Top = 190
+    Width = 47
+    Height = 20
+    Caption = 'Fechas'
+    Font.Color = clBlack
+    Font.Height = 17
+    Font.Name = 'times'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ListFechas: TListBox
+    Left = 353
+    Top = 222
+    Width = 97
+    Height = 57
+    Hint = 'Fechas de los conciertos'
+    Enabled = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+  end
+  object LPrecios: TLabel
+    Left = 376
+    Top = 83
+    Width = 50
+    Height = 20
+    Caption = 'Precios'
+    Font.Color = clBlack
+    Font.Height = 17
+    Font.Name = 'times'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ListPrecios: TListBox
+    Left = 353
+    Top = 116
+    Width = 97
+    Height = 57
+    Hint = 'Precios de lso conciertos'
+    Enabled = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 6
+  end
+  object BVolver: TButton
+    Left = 75
+    Top = 304
+    Width = 169
+    Height = 41
+    Caption = 'Volver al principio'
+    TabOrder = 7
+    OnClick = BVolverClick
+  end
+  object BIrComprar: TButton
+    Left = 299
+    Top = 303
+    Width = 169
+    Height = 41
+    Caption = 'Ir a comprar entradas'
+    TabOrder = 8
+    OnClick = BIrComprarClick
+  end
+  object MenuPrincipal: TMainMenu
+    Color = clSilver
+    object Ira1: TMenuItem
+      Caption = 'Ir a '
+      Hint = 'Acceso rapido a las zonas'
+      object VerGrupos1: TMenuItem
+        Caption = 'Comprar Entradas'
+        OnClick = VerGrupos1Click
+      end
+      object VerGrupos2: TMenuItem
+        Caption = 'Ver Grupos'
+      end
+      object Principal1: TMenuItem
+        Caption = 'Principal'
+        OnClick = Principal1Click
+      end
+      object Salir1: TMenuItem
+        Caption = 'Salir'
+        OnClick = Salir1Click
+      end
+    end
+    object Ayuda1: TMenuItem
+      Caption = 'Ayuda'
+      Hint = 'Acceso a la ayuda'
+      object Acercade1: TMenuItem
+        Caption = 'Acerca de ...'
+        OnClick = Acercade1Click
+      end
+    end
+  end
+end

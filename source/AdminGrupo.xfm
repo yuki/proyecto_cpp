@@ -1,0 +1,352 @@
+object FAgreGrupos: TFAgreGrupos
+  Left = 168
+  Top = 78
+  Width = 543
+  Height = 396
+  HorzScrollBar.Range = 480
+  VertScrollBar.Range = 337
+  ActiveControl = NomGrupo
+  Caption = 'Agregar Grupos'
+  Color = clSilver
+  Menu = MenuPrincipal
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 100
+  TextHeight = 15
+  TextWidth = 7
+  object LTitulo: TLabel
+    Left = 167
+    Top = 8
+    Width = 208
+    Height = 48
+    Caption = 'Agregar grupo'
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 37
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 0
+    ParentFont = False
+  end
+  object Lnombre: TLabel
+    Left = 111
+    Top = 88
+    Width = 56
+    Height = 20
+    Caption = 'Nombre'
+    Font.Color = clBlack
+    Font.Height = 17
+    Font.Name = 'times'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LPrecios: TLabel
+    Left = 351
+    Top = 152
+    Width = 60
+    Height = 20
+    Caption = 'Precios: '
+    Font.Color = clBlack
+    Font.Height = 17
+    Font.Name = 'times'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object PrecBara: TLabel
+    Left = 351
+    Top = 192
+    Width = 36
+    Height = 15
+    Caption = 'Barato'
+  end
+  object PrecMedio: TLabel
+    Left = 351
+    Top = 224
+    Width = 35
+    Height = 15
+    Caption = 'Medio'
+  end
+  object PrecCaro: TLabel
+    Left = 351
+    Top = 256
+    Width = 27
+    Height = 15
+    Caption = 'Caro'
+  end
+  object NomGrupo: TEdit
+    Left = 63
+    Top = 112
+    Width = 169
+    Height = 23
+    TabOrder = 1
+  end
+  object MaskPrec1: TMaskEdit
+    Left = 407
+    Top = 184
+    Width = 46
+    Height = 23
+    EditMask = '!99,99;1;-'
+    MaxLength = 5
+    TabOrder = 9
+    Text = '00,00'
+  end
+  object MaskPrec2: TMaskEdit
+    Left = 407
+    Top = 216
+    Width = 46
+    Height = 23
+    EditMask = '!99,99;1;-'
+    MaxLength = 5
+    TabOrder = 10
+    Text = '00,00'
+  end
+  object MaskPrec3: TMaskEdit
+    Left = 407
+    Top = 248
+    Width = 46
+    Height = 23
+    EditMask = '!99,99;1;-'
+    MaxLength = 5
+    TabOrder = 11
+    Text = '00,00'
+  end
+  object AgreGrupOK: TBitBtn
+    Left = 139
+    Top = 304
+    Width = 113
+    Height = 33
+    Hint = 'Agrega el grupo'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 17
+    OnClick = AgreGrupOKClick
+    Kind = bkOK
+  end
+  object AgreGrupNO: TBitBtn
+    Left = 347
+    Top = 304
+    Width = 113
+    Height = 33
+    Hint = 'Cancela la acci'#243'n'
+    Caption = 'Abortar'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 18
+    OnClick = AgreGrupNOClick
+    Kind = bkAbort
+  end
+  object LAgrFechas: TLabel
+    Left = 76
+    Top = 144
+    Width = 47
+    Height = 20
+    Caption = 'Fechas'
+    Font.Color = clBlack
+    Font.Height = 17
+    Font.Name = 'times'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object MaskFecha1: TMaskEdit
+    Left = 92
+    Top = 184
+    Width = 41
+    Height = 23
+    EditMask = '!99/99;1;-'
+    MaxLength = 5
+    TabOrder = 3
+    Text = '31/12'
+  end
+  object MaskFecha2: TMaskEdit
+    Left = 92
+    Top = 216
+    Width = 41
+    Height = 23
+    EditMask = '!99/99;1;-'
+    MaxLength = 5
+    TabOrder = 4
+    Text = '31/12'
+  end
+  object MaskFecha3: TMaskEdit
+    Left = 92
+    Top = 248
+    Width = 41
+    Height = 23
+    EditMask = '!99/99;1;-'
+    MaxLength = 5
+    TabOrder = 5
+    Text = '31/12'
+  end
+  object LHora: TLabel
+    Left = 172
+    Top = 144
+    Width = 35
+    Height = 20
+    Caption = 'Hora'
+    Font.Color = clBlack
+    Font.Height = 17
+    Font.Name = 'times'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object MaskHora1: TMaskEdit
+    Left = 172
+    Top = 184
+    Width = 41
+    Height = 23
+    EditMask = '!99:99;1;-'
+    MaxLength = 5
+    TabOrder = 6
+    Text = '23:59'
+  end
+  object MaskHora2: TMaskEdit
+    Left = 172
+    Top = 216
+    Width = 41
+    Height = 23
+    EditMask = '!99:99;1;-'
+    MaxLength = 5
+    TabOrder = 7
+    Text = '23:59'
+  end
+  object MaskHora3: TMaskEdit
+    Left = 172
+    Top = 248
+    Width = 41
+    Height = 23
+    EditMask = '!99:99;1;-'
+    MaxLength = 5
+    TabOrder = 8
+    Text = '23:59'
+  end
+  object Lddmm: TLabel
+    Left = 92
+    Top = 168
+    Width = 44
+    Height = 15
+    Caption = 'DD/MM'
+  end
+  object Lhhmm: TLabel
+    Left = 172
+    Top = 168
+    Width = 44
+    Height = 15
+    Caption = 'HH/MM'
+  end
+  object NomGira: TEdit
+    Left = 311
+    Top = 112
+    Width = 169
+    Height = 23
+    TabOrder = 2
+  end
+  object LGira: TLabel
+    Left = 367
+    Top = 88
+    Width = 32
+    Height = 20
+    Caption = 'Gira'
+    Font.Color = clBlack
+    Font.Height = 17
+    Font.Name = 'times'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object L1: TLabel
+    Left = 68
+    Top = 184
+    Width = 15
+    Height = 27
+    Caption = '1'#170
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 16
+    Font.Name = 'MS Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object L2: TLabel
+    Left = 68
+    Top = 216
+    Width = 15
+    Height = 27
+    Caption = '2'#170
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 16
+    Font.Name = 'MS Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object L3: TLabel
+    Left = 68
+    Top = 248
+    Width = 15
+    Height = 27
+    Caption = '3'#170
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 16
+    Font.Name = 'MS Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object MenuPrincipal: TMainMenu
+    Color = clSilver
+    object Ira1: TMenuItem
+      Caption = 'Ir a '
+      Hint = 'Acceso rapido a las zonas'
+      object VerGrupos1: TMenuItem
+        Caption = 'Comprar Entradas'
+        OnClick = VerGrupos1Click
+      end
+      object VerGrupos2: TMenuItem
+        Caption = 'Ver Grupos'
+        OnClick = VerGrupos2Click
+      end
+      object Principal1: TMenuItem
+        Caption = 'Principal'
+        OnClick = Principal1Click
+      end
+      object Salir1: TMenuItem
+        Caption = 'Salir'
+        OnClick = Salir1Click
+      end
+    end
+    object Administrador1: TMenuItem
+      Caption = 'Administrador'
+      object AadirGrupo1: TMenuItem
+        Caption = 'A'#241'adir Grupo'
+      end
+      object EliminarGrupo1: TMenuItem
+        Caption = 'Eliminar Grupo'
+        OnClick = EliminarGrupo1Click
+      end
+      object CambiarPassword1: TMenuItem
+        Caption = 'Cambiar Password'
+        OnClick = CambiarPassword1Click
+      end
+      object Recaudacin1: TMenuItem
+        Caption = 'Recaudaci'#243'n'
+        OnClick = Recaudacin1Click
+      end
+    end
+    object Ayuda1: TMenuItem
+      Caption = 'Ayuda'
+      Hint = 'Acceso a la ayuda'
+      object Acercade1: TMenuItem
+        Caption = 'Acerca de ...'
+        OnClick = Acercade1Click
+      end
+    end
+  end
+end

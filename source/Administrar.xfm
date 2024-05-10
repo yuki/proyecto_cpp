@@ -1,0 +1,156 @@
+object FAdmin: TFAdmin
+  Left = 157
+  Top = 75
+  Width = 543
+  Height = 397
+  HorzScrollBar.Range = 481
+  VertScrollBar.Range = 345
+  ActiveControl = BAniadir
+  Caption = 'Bienvenido Administrador'
+  Color = clSilver
+  Menu = MenuPrincipal
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 15
+  TextWidth = 7
+  object LBienveni: TLabel
+    Left = 182
+    Top = 0
+    Width = 160
+    Height = 48
+    Caption = 'Bienvenido'
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 37
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 0
+    ParentFont = False
+  end
+  object Ladmin: TLabel
+    Left = 150
+    Top = 48
+    Width = 200
+    Height = 48
+    Caption = 'Administrador'
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 37
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 0
+    ParentFont = False
+  end
+  object BAniadir: TButton
+    Left = 72
+    Top = 152
+    Width = 161
+    Height = 49
+    Hint = 'A'#241'ade un grupo'
+    Caption = 'A'#241'adir Grupo'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+    OnClick = BAniadirClick
+  end
+  object BEliminar: TButton
+    Left = 320
+    Top = 152
+    Width = 161
+    Height = 49
+    Hint = 'Elimina un grupo ya existente'
+    Caption = 'Eliminar Grupo'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+    OnClick = BEliminarClick
+  end
+  object BRecau: TButton
+    Left = 72
+    Top = 224
+    Width = 161
+    Height = 49
+    Hint = 'Mira la recaudaci'#243'n acumulada'
+    Caption = 'Ver Recaudacion'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+    OnClick = BRecauClick
+  end
+  object BCambiar: TButton
+    Left = 320
+    Top = 224
+    Width = 161
+    Height = 49
+    Hint = 'Cambia el Password'
+    Caption = 'Cambiar Password'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 5
+    OnClick = BCambiarClick
+  end
+  object BVolver: TButton
+    Left = 200
+    Top = 296
+    Width = 161
+    Height = 49
+    Hint = 'Volver al men'#250' principal'
+    Caption = 'Volver al Menu'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 6
+    OnClick = BVolverClick
+  end
+  object MenuPrincipal: TMainMenu
+    Color = clSilver
+    object Ira1: TMenuItem
+      Caption = 'Ir a '
+      Hint = 'Acceso rapido a las zonas'
+      object VerGrupos1: TMenuItem
+        Caption = 'Comprar Entradas'
+        OnClick = VerGrupos1Click
+      end
+      object VerGrupos2: TMenuItem
+        Caption = 'Ver Grupos'
+        OnClick = VerGrupos2Click
+      end
+      object Principal1: TMenuItem
+        Caption = 'Principal'
+        OnClick = Principal1Click
+      end
+      object Salir1: TMenuItem
+        Caption = 'Salir'
+        OnClick = Salir1Click
+      end
+    end
+    object Administrador1: TMenuItem
+      Caption = 'Administrador'
+      object AadirGrupo1: TMenuItem
+        Caption = 'A'#241'adir Grupo'
+        OnClick = AadirGrupo1Click
+      end
+      object EliminarGrupo1: TMenuItem
+        Caption = 'Eliminar Grupo'
+        OnClick = EliminarGrupo1Click
+      end
+      object CambiarPassword1: TMenuItem
+        Caption = 'Cambiar Password'
+        OnClick = CambiarPassword1Click
+      end
+      object Recaudacin1: TMenuItem
+        Caption = 'Recaudaci'#243'n'
+        OnClick = Recaudacin1Click
+      end
+    end
+    object Ayuda1: TMenuItem
+      Caption = 'Ayuda'
+      Hint = 'Acceso a la ayuda'
+      object Acercade1: TMenuItem
+        Caption = 'Acerca de ...'
+        OnClick = Acercade1Click
+      end
+    end
+  end
+end

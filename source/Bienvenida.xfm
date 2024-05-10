@@ -1,0 +1,129 @@
+object FBienveni: TFBienveni
+  Left = 161
+  Top = 100
+  Width = 543
+  Height = 373
+  HorzScrollBar.Range = 408
+  VertScrollBar.Range = 313
+  ActiveControl = BVerGrupos
+  Caption = 'Bienvenid@ al Rock Star'
+  Color = clSilver
+  Font.CharSet = fcsLatin1
+  Font.Color = clBlack
+  Font.Height = 37
+  Font.Name = 'Times New Roman'
+  Font.Pitch = fpVariable
+  Font.Style = []
+  Font.Weight = 40
+  Menu = MenuPrincipal
+  ParentFont = False
+  ShowHint = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 48
+  TextWidth = 17
+  object LBienveni: TLabel
+    Left = 97
+    Top = 8
+    Width = 311
+    Height = 48
+    Caption = 'Hola y Bienvenid@ al'
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 37
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 40
+    ParentFont = False
+    OnDblClick = LBienveniDblClick
+  end
+  object BVerGrupos: TButton
+    Left = 207
+    Top = 184
+    Width = 129
+    Height = 41
+    Cursor = crHandPoint
+    Hint = 'Podra ver los Grupos que tenemos'
+    Caption = 'Ver Grupos'
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 11
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 40
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+    OnClick = BVerGruposClick
+  end
+  object LTeatro: TLabel
+    Left = 152
+    Top = 72
+    Width = 200
+    Height = 48
+    Caption = 'Teatro Griega'
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 37
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 40
+    ParentFont = False
+  end
+  object BComprar: TButton
+    Left = 207
+    Top = 272
+    Width = 129
+    Height = 41
+    Cursor = crHandPoint
+    Hint = 'Podra elegir las entradas que quiera'
+    Caption = 'Comprar Entradas'
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 11
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 40
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+    OnClick = BComprarClick
+  end
+  object MenuPrincipal: TMainMenu
+    Color = clSilver
+    object Ira1: TMenuItem
+      Caption = 'Ir a '
+      Hint = 'Acceso rapido a las zonas'
+      object VerGrupos1: TMenuItem
+        Caption = 'Comprar Entradas'
+        OnClick = VerGrupos1Click
+      end
+      object VerGrupos2: TMenuItem
+        Caption = 'Ver Grupos'
+        OnClick = VerGrupos2Click
+      end
+      object Principal1: TMenuItem
+        Caption = 'Principal'
+      end
+      object Salir1: TMenuItem
+        Caption = 'Salir'
+        OnClick = Salir1Click
+      end
+    end
+    object Ayuda1: TMenuItem
+      Caption = 'Ayuda'
+      Hint = 'Acceso a la ayuda'
+      object Acercade1: TMenuItem
+        Caption = 'Acerca de ...'
+        OnClick = Acercade1Click
+      end
+    end
+  end
+end

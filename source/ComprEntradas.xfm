@@ -1,0 +1,814 @@
+object FComprarEntr: TFComprarEntr
+  Left = 166
+  Top = 58
+  Width = 553
+  Height = 472
+  HorzScrollBar.Range = 529
+  VertScrollBar.Range = 425
+  ActiveControl = BA1
+  Caption = 'Comprar Entradas'
+  Color = clSilver
+  Menu = MenuPrincipal
+  OnClose = FormClose
+  OnHide = FormHide
+  OnShow = FormShow
+  PixelsPerInch = 100
+  TextHeight = 15
+  TextWidth = 7
+  object BA1: TButton
+    Left = 216
+    Top = 56
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'A1'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+    OnClick = BA1Click
+  end
+  object BA2: TButton
+    Left = 248
+    Top = 56
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'A2'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+    OnClick = BA2Click
+  end
+  object BA3: TButton
+    Left = 280
+    Top = 56
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'A3'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+    OnClick = BA3Click
+  end
+  object BA4: TButton
+    Left = 312
+    Top = 56
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'A4'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 5
+    OnClick = BA4Click
+  end
+  object BA5: TButton
+    Left = 344
+    Top = 56
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'A5'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 6
+    OnClick = BA5Click
+  end
+  object BA6: TButton
+    Left = 376
+    Top = 56
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'A6'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 7
+    OnClick = BA6Click
+  end
+  object BA7: TButton
+    Left = 408
+    Top = 56
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'A7'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 8
+    OnClick = BA7Click
+  end
+  object BA8: TButton
+    Left = 440
+    Top = 56
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'A8'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 9
+    OnClick = BA8Click
+  end
+  object BA9: TButton
+    Left = 472
+    Top = 56
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'A9'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 10
+    OnClick = BA9Click
+  end
+  object BA10: TButton
+    Left = 504
+    Top = 56
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'A10'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 11
+    OnClick = BA10Click
+  end
+  object BB1: TButton
+    Left = 216
+    Top = 88
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'B1'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 12
+    OnClick = BB1Click
+  end
+  object BB2: TButton
+    Left = 248
+    Top = 88
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'B2'
+    Color = clTeal
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 13
+    OnClick = BB2Click
+  end
+  object BB3: TButton
+    Left = 280
+    Top = 88
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'B3'
+    Color = clTeal
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 14
+    OnClick = BB3Click
+  end
+  object BB4: TButton
+    Left = 312
+    Top = 88
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'B4'
+    Color = clTeal
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 15
+    OnClick = BB4Click
+  end
+  object BB5: TButton
+    Left = 344
+    Top = 88
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'B5'
+    Color = clTeal
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 16
+    OnClick = BB5Click
+  end
+  object BB6: TButton
+    Left = 376
+    Top = 88
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'B6'
+    Color = clTeal
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 17
+    OnClick = BB6Click
+  end
+  object BB7: TButton
+    Left = 408
+    Top = 88
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'B7'
+    Color = clTeal
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 18
+    OnClick = BB7Click
+  end
+  object BB8: TButton
+    Left = 440
+    Top = 88
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'B8'
+    Color = clTeal
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 19
+    OnClick = BB8Click
+  end
+  object BB9: TButton
+    Left = 472
+    Top = 88
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'B9'
+    Color = clTeal
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 20
+    OnClick = BB9Click
+  end
+  object BB10: TButton
+    Left = 504
+    Top = 88
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'B10'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 21
+    OnClick = BB10Click
+  end
+  object BC1: TButton
+    Left = 216
+    Top = 120
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'C1'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 22
+    OnClick = BC1Click
+  end
+  object BC2: TButton
+    Left = 248
+    Top = 120
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'C2'
+    Color = clTeal
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 23
+    OnClick = BC2Click
+  end
+  object BC3: TButton
+    Left = 280
+    Top = 120
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'C3'
+    Color = clFuchsia
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 24
+    OnClick = BC3Click
+  end
+  object BC4: TButton
+    Left = 312
+    Top = 120
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'C4'
+    Color = clFuchsia
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 25
+    OnClick = BC4Click
+  end
+  object BC5: TButton
+    Left = 344
+    Top = 120
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'C5'
+    Color = clFuchsia
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 26
+    OnClick = BC5Click
+  end
+  object BC6: TButton
+    Left = 376
+    Top = 120
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'C6'
+    Color = clFuchsia
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 27
+    OnClick = BC6Click
+  end
+  object BC7: TButton
+    Left = 408
+    Top = 120
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'C7'
+    Color = clFuchsia
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 28
+    OnClick = BC7Click
+  end
+  object BC8: TButton
+    Left = 440
+    Top = 120
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'C8'
+    Color = clFuchsia
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 29
+    OnClick = BC8Click
+  end
+  object BC9: TButton
+    Left = 472
+    Top = 120
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'C9'
+    Color = clTeal
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 30
+    OnClick = BC9Click
+  end
+  object BC10: TButton
+    Left = 504
+    Top = 120
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'C10'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 31
+    OnClick = BC10Click
+  end
+  object BD1: TButton
+    Left = 216
+    Top = 152
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'D1'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 32
+    OnClick = BD1Click
+  end
+  object BD2: TButton
+    Left = 248
+    Top = 152
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'D2'
+    Color = clTeal
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 33
+    OnClick = BD2Click
+  end
+  object BD3: TButton
+    Left = 280
+    Top = 152
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'D3'
+    Color = clFuchsia
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 34
+    OnClick = BD3Click
+  end
+  object BD4: TButton
+    Left = 312
+    Top = 152
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'D4'
+    Color = clFuchsia
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 35
+    OnClick = BD4Click
+  end
+  object BD5: TButton
+    Left = 344
+    Top = 152
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'D5'
+    Color = clFuchsia
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 36
+    OnClick = BD5Click
+  end
+  object BD6: TButton
+    Left = 376
+    Top = 152
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'D6'
+    Color = clFuchsia
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 37
+    OnClick = BD6Click
+  end
+  object BD7: TButton
+    Left = 408
+    Top = 152
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'D7'
+    Color = clFuchsia
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 38
+    OnClick = BD7Click
+  end
+  object BD8: TButton
+    Left = 440
+    Top = 152
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'D8'
+    Color = clFuchsia
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 39
+    OnClick = BD8Click
+  end
+  object BD9: TButton
+    Left = 472
+    Top = 152
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'D9'
+    Color = clTeal
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 40
+    OnClick = BD9Click
+  end
+  object BD10: TButton
+    Left = 504
+    Top = 152
+    Width = 25
+    Height = 25
+    Hint = 'Para seleccionarla pulsa sobre la butaca que quieras'
+    Caption = 'D10'
+    Color = clOlive
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 41
+    OnClick = BD10Click
+  end
+  object LCompEntr: TLabel
+    Left = 168
+    Top = 8
+    Width = 214
+    Height = 37
+    Caption = 'Comprar Entradas'
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 25
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LGrupo: TLabel
+    Left = 72
+    Top = 72
+    Width = 51
+    Height = 20
+    Caption = 'Grupos'
+    Font.Color = clBlack
+    Font.Height = 17
+    Font.Name = 'times'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ListGrupos: TListBox
+    Left = 13
+    Top = 96
+    Width = 169
+    Height = 57
+    Hint = 'Lista de Grupos Existentes'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    OnClick = ListGruposClick
+  end
+  object PEscenario: TPanel
+    Left = 216
+    Top = 184
+    Width = 313
+    Height = 49
+    Caption = 'Escenario'
+    Color = clWhite
+    Font.Color = clBlack
+    Font.Height = 19
+    Font.Name = 'adobe-itc zapf chancery'
+    Font.Pitch = fpVariable
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 44
+  end
+  object LFecha: TLabel
+    Left = 26
+    Top = 184
+    Width = 47
+    Height = 20
+    Caption = 'Fechas'
+    Font.Color = clBlack
+    Font.Height = 17
+    Font.Name = 'times'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ListFechas: TListBox
+    Left = 93
+    Top = 168
+    Width = 68
+    Height = 57
+    Hint = 'Fechas de conciertos'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+    OnClick = ListFechasClick
+  end
+  object LPrecios: TLabel
+    Left = 89
+    Top = 248
+    Width = 50
+    Height = 20
+    Caption = 'Precios'
+    Font.Color = clBlack
+    Font.Height = 17
+    Font.Name = 'times'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object BBarato: TButton
+    Left = 159
+    Top = 248
+    Width = 25
+    Height = 25
+    Color = clOlive
+    Enabled = False
+    TabOrder = 47
+  end
+  object BMedio: TButton
+    Left = 279
+    Top = 248
+    Width = 25
+    Height = 25
+    Color = clTeal
+    Enabled = False
+    TabOrder = 48
+  end
+  object EPrecBarato: TEdit
+    Left = 191
+    Top = 248
+    Width = 41
+    Height = 23
+    Hint = 'Precio por entrada'
+    ParentShowHint = False
+    ReadOnly = True
+    ShowHint = True
+    TabOrder = 49
+  end
+  object EPrecMedio: TEdit
+    Left = 311
+    Top = 248
+    Width = 41
+    Height = 23
+    Hint = 'Precio por entrada'
+    ParentShowHint = False
+    ReadOnly = True
+    ShowHint = True
+    TabOrder = 50
+  end
+  object BPrecCaro: TButton
+    Left = 399
+    Top = 248
+    Width = 25
+    Height = 25
+    Color = clFuchsia
+    Enabled = False
+    TabOrder = 51
+  end
+  object EPrecCaro: TEdit
+    Left = 439
+    Top = 248
+    Width = 41
+    Height = 23
+    Hint = 'Precio por entrada'
+    ParentShowHint = False
+    ReadOnly = True
+    ShowHint = True
+    TabOrder = 52
+  end
+  object BitComprar: TBitBtn
+    Left = 104
+    Top = 384
+    Width = 137
+    Height = 41
+    Hint = 'Acepta la compra'
+    Caption = 'Comprar'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 53
+    OnClick = BitComprarClick
+    Kind = bkOK
+  end
+  object BVolver: TButton
+    Left = 312
+    Top = 384
+    Width = 137
+    Height = 41
+    Hint = 'Vuelve al men'#250' de inicio'
+    Caption = 'Volver al principio'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 54
+    OnClick = BVolverClick
+  end
+  object LPrecTotal: TLabel
+    Left = 262
+    Top = 312
+    Width = 110
+    Height = 29
+    Caption = 'Coste total: '
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 21
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Ecoste: TEdit
+    Left = 379
+    Top = 312
+    Width = 41
+    Height = 23
+    Hint = 'Coste total de las entradas seleccionadas'
+    ParentShowHint = False
+    ReadOnly = True
+    ShowHint = True
+    TabOrder = 56
+  end
+  object BOcupado: TButton
+    Left = 95
+    Top = 288
+    Width = 25
+    Height = 25
+    Color = clRed
+    Enabled = False
+    TabOrder = 57
+  end
+  object BSeleccionada: TButton
+    Left = 95
+    Top = 320
+    Width = 25
+    Height = 25
+    Color = clBlack
+    Enabled = False
+    TabOrder = 58
+  end
+  object LOcupada: TLabel
+    Left = 129
+    Top = 296
+    Width = 70
+    Height = 27
+    Caption = 'Ocupada'
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 16
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LSeleccion: TLabel
+    Left = 129
+    Top = 328
+    Width = 101
+    Height = 27
+    Caption = 'Su selecci'#243'n'
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 16
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object MenuPrincipal: TMainMenu
+    Color = clSilver
+    object Ira1: TMenuItem
+      Caption = 'Ir a '
+      Hint = 'Acceso rapido a las zonas'
+      object VerGrupos1: TMenuItem
+        Caption = 'Comprar Entradas'
+      end
+      object VerGrupos2: TMenuItem
+        Caption = 'Ver Grupos'
+        OnClick = VerGrupos2Click
+      end
+      object Principal1: TMenuItem
+        Caption = 'Principal'
+        OnClick = Principal1Click
+      end
+      object Salir1: TMenuItem
+        Caption = 'Salir'
+        OnClick = Salir1Click
+      end
+    end
+    object Ayuda1: TMenuItem
+      Caption = 'Ayuda'
+      Hint = 'Acceso a la ayuda'
+      object Acercade1: TMenuItem
+        Caption = 'Acerca de ...'
+        OnClick = Acercade1Click
+      end
+    end
+  end
+end

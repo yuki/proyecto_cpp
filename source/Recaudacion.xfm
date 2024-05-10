@@ -1,0 +1,166 @@
+object FRecaudacion: TFRecaudacion
+  Left = 156
+  Top = 81
+  Width = 529
+  Height = 420
+  HorzScrollBar.Range = 498
+  VertScrollBar.Range = 345
+  ActiveControl = ListGrupos
+  Caption = 'Recaudaci'#243'n'
+  Color = clSilver
+  Menu = MenuPrincipal
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 15
+  TextWidth = 7
+  object LRecaudacion: TLabel
+    Left = 174
+    Top = 32
+    Width = 190
+    Height = 48
+    Caption = 'Recaudaci'#243'n'
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 32
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 40
+    ParentFont = False
+  end
+  object ListGrupos: TListBox
+    Left = 36
+    Top = 136
+    Width = 185
+    Height = 97
+    Hint = 'Todos los Grupos Existentes'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+    OnClick = ListGruposClick
+  end
+  object ListFechas: TListBox
+    Left = 272
+    Top = 136
+    Width = 81
+    Height = 57
+    Hint = 'Fechas de los Conciertos'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+  end
+  object ListRecau: TListBox
+    Left = 408
+    Top = 136
+    Width = 81
+    Height = 57
+    Hint = 'Recaudaci'#243'n'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+  end
+  object Fechas: TLabel
+    Left = 288
+    Top = 112
+    Width = 53
+    Height = 26
+    Caption = 'Fechas'
+    Font.Color = clBlack
+    Font.Height = 16
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 40
+    ParentFont = False
+  end
+  object Grupos: TLabel
+    Left = 103
+    Top = 112
+    Width = 53
+    Height = 26
+    Caption = 'Grupos'
+    Font.Color = clBlack
+    Font.Height = 16
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 40
+    ParentFont = False
+  end
+  object BMenuPrin: TButton
+    Left = 180
+    Top = 296
+    Width = 169
+    Height = 49
+    Hint = 'Vuelve al men'#250' del Administrador'
+    Caption = 'Al men'#250' Administrador'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 6
+    OnClick = BMenuPrinClick
+  end
+  object LRecau: TLabel
+    Left = 404
+    Top = 112
+    Width = 94
+    Height = 26
+    Caption = 'Recaudaci'#243'n'
+    Font.Color = clBlack
+    Font.Height = 16
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 40
+    ParentFont = False
+  end
+  object MenuPrincipal: TMainMenu
+    Color = clSilver
+    object Ira1: TMenuItem
+      Caption = 'Ir a '
+      Hint = 'Acceso rapido a las zonas'
+      object VerGrupos1: TMenuItem
+        Caption = 'Comprar Entradas'
+        OnClick = VerGrupos1Click
+      end
+      object VerGrupos2: TMenuItem
+        Caption = 'Ver Grupos'
+        OnClick = VerGrupos2Click
+      end
+      object Principal1: TMenuItem
+        Caption = 'Principal'
+        OnClick = Principal1Click
+      end
+      object Salir1: TMenuItem
+        Caption = 'Salir'
+        OnClick = Salir1Click
+      end
+    end
+    object Administrador1: TMenuItem
+      Caption = 'Administrador'
+      object AadirGrupo1: TMenuItem
+        Caption = 'A'#241'adir Grupo'
+        OnClick = AadirGrupo1Click
+      end
+      object EliminarGrupo1: TMenuItem
+        Caption = 'Eliminar Grupo'
+        OnClick = EliminarGrupo1Click
+      end
+      object CambiarPassword1: TMenuItem
+        Caption = 'Cambiar Password'
+        OnClick = CambiarPassword1Click
+      end
+      object Recaudacin1: TMenuItem
+        Caption = 'Recaudaci'#243'n'
+      end
+    end
+    object Ayuda1: TMenuItem
+      Caption = 'Ayuda'
+      Hint = 'Acceso a la ayuda'
+      object Acercade1: TMenuItem
+        Caption = 'Acerca de ...'
+        OnClick = Acercade1Click
+      end
+    end
+  end
+end
